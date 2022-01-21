@@ -1,0 +1,20 @@
+﻿{
+  "Environments": [
+    {
+      "bindingCulture": {
+        "language": "en-us"
+      },
+      "language": {
+        "feature": "en-us"
+      },
+
+      "Name": "Production",
+      "Browser": "Chrome",
+      "LogFile": "AutomationLogs.log",
+      "HomeUrl": "https://www.leesa.com/"
+
+
+
+    }
+  ]
+}
