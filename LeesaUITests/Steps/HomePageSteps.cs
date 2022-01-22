@@ -33,7 +33,7 @@ namespace LeesaUITests.Steps
         [Then(@"Verify Leesa Logo is displaying")]
         public void ThenVerifyLeesaLogoIsDisplaying()
         {
-            Assert.IsTrue(_home.VerifyLogoIsDisplayed(), "Verify Logo Is Displayed"); 
+            Assert.IsTrue(_home.VerifyLogoIsDisplayed(), "Verify Logo Is Displayed");
         }
 
         [Then(@"Verify Navigation Menu is displaying")]
@@ -83,5 +83,21 @@ namespace LeesaUITests.Steps
         {
             Assert.IsTrue(_home.VerifyOtherProductListIsDisplayed(), "Verify Other Products List Is Displayed");
         }
+
+        [Then(@"Verify for Menus and validate TopMenus  are showing")]
+        public void ThenVerifyForMenusAndValidateTopMenusAreShowing()
+        {
+            List<string> menus = _home.GetNavigationMenus();
+            foreach (var menu in menus)
+            {
+                Assert.IsTrue(_home.VerifyMenusHaveWorkingLinks(menu));
+                List<string> subMenus = _home.GetSubMenus(menu);
+                foreach(var subMenu in subMenus)
+                {
+                    Assert.IsTrue(_home.VerifyMenusHaveWorkingLinks(subMenu));
+                }
+            }
+        }
+
     }
 }

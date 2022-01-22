@@ -168,23 +168,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("User lands on Leesa Website", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 20
- testRunner.Then("Verify for Menus and validate \'Mattresses\', \'Bases\', \'Beddings & Cushions\', \'Bund" +
-                        "les\' and \'Blogs\' are showing", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 21
- testRunner.And("Verify \'Mattresses\' has sub menus and pointing to correct links", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 22
- testRunner.And("Verify \'Bases\' has sub menus and pointing to correct links", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 23
- testRunner.And("Verify \'Beddings & Cushions\' has submenus and pointing to correct links", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 24
- testRunner.And("Verify \'Bundles\' is redirecting to correct link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 25
- testRunner.And("Verify \'Blogs\' is redirecting to correct link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Then("Verify for Menus and validate TopMenus  are showing", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

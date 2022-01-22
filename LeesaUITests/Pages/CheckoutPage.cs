@@ -23,55 +23,7 @@ namespace LeesaUITests.Pages
 
         #region Methods
 
-        public bool VerifyLogoIsDisplayed()
-        {
-            return Logo.IsDisplayed();
-        }
-
-        public bool VerifyNavigationMenuesIsDisplayed()
-        {
-            return NavigationMenues.IsDisplayed();
-        }
-
-        public bool VerifyStoreIconIsDisplayed()
-        {
-            return StoreIcon.IsDisplayed();
-        }
-
-        public bool VerifyAccountIconIsDisplayed()
-        {
-            return AccountIcon.IsDisplayed();
-        }
-
-        public bool VerifyCartIconIsDisplayed()
-        {
-            return CartIcon.IsDisplayed();
-        }
-
-        public bool VerifySliderIsDisplayed()
-        {
-            return Slider.Any(x => x.IsDisplayed());
-        }
-
-        public bool VerifyAffirmIsDisplayed()
-        {
-            return Affirm.IsDisplayed();
-        }
-
-        public bool VerifyMattressListIsDisplayed()
-        {
-            return MattressList.All(x=>x.IsDisplayed());
-        }
-
-        public bool VerifyOtherProductListIsDisplayed()
-        {
-            return OtherProducts.All(x => x.IsDisplayed());
-        }
-
-        public void ClickLoginButton()
-        {
-            AccountIcon.Click();
-        }
+      
 
         #endregion
     }

@@ -17,11 +17,7 @@ Scenario: Verify Website is rendering properly
 
 Scenario: Verify All Navigation Items are showing
 	Given User lands on Leesa Website
-	Then Verify for Menus and validate 'Mattresses', 'Bases', 'Beddings & Cushions', 'Bundles' and 'Blogs' are showing
-	And Verify 'Mattresses' has sub menus and pointing to correct links
-	And Verify 'Bases' has sub menus and pointing to correct links
-	And Verify 'Beddings & Cushions' has submenus and pointing to correct links
-	And Verify 'Bundles' is redirecting to correct link
-	And Verify 'Blogs' is redirecting to correct link
+	Then Verify for Menus and validate TopMenus  are showing
+
 
 	
